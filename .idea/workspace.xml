@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2f9dcd3-023c-4361-b587-34a4021cc742" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1. Product of colums.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2. Sum of diagonal matrix.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. Sum , product of matrix.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4. Sn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5. Kiem tra 3 canh cua tam giac.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4. Sn.html" beforeDir="false" afterPath="$PROJECT_DIR$/4. Sn.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,7 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612162824098</updated>
-      <workItem from="1612162825544" duration="1154000" />
+      <workItem from="1612162825544" duration="1942000" />
     </task>
     <servers />
   </component>

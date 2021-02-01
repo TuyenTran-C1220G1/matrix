@@ -9,8 +9,12 @@
 </body>
 </html>
 <script>
-    let s=0;
-    let n=parseInt(prompt("input n",))
-    let product=1;
-    for(i=1;)
+    let s = 0;
+    let n = parseInt(prompt("input n",))
+    let product = 1;
+    for (let i = 1; i <= n; i++) {
+        product *= i;
+        s += product;
+    }
+    alert(s)
 </script>
