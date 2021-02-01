@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    let arr = [[1, 1, 1], [2, 2, 2], [3, 3, 3]];
+    let sum = 0;
+    let product = 1;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            if (i <= j) {
+                sum += arr[i][j];
+            }
+        }
+    }
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            if (i >= j) {
+                product *= arr[i][j];
+            }
+        }
+    }
+
+    alert('sum of Top matrix= ' + sum);
+    alert('product of Bottom matrix= ' + product);
+
+
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    let arr = [[1, 2, 3], [5, 6, 7], [8, 9, 10]];
+    let products = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            products[j] = (products[j] || 1) * arr[i][j];
+        }
+    }
+    console.log(products);
+    let max = products[0];
+    let index;
+    for (let i = 0; i < products.length; i++) {
+        if (max < products[i]) {
+            max = products[i];
+            index = i;
+        }
+    }
+    alert('max=' + max + ' column: ' + index);
+</script>
