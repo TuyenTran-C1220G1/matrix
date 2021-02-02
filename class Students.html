@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function Students(name, birthday, score) {
+        this.name = name;
+        this.birdthday = birthday;
+        this.score = score;
+    }
+
+    let student1 = new Students("Nguyen Van A", "20/8/1986", 10);
+    let student2 = new Students("Nguyen Van B", "25/4/1970", 7);
+    let student3 = new Students("Nguyen Van C", "02/2/1916", 8);
+    let arrStudents = [student1, student2, student3];
+
+    function ManagerStudents() {
+        this.show = function () {
+            for (let i = 0; i < arrStudents.length; i++) {
+                console.log(arrStudents[i]);
+            }
+
+        }
+        this.delete = function (name) {
+            for (let i = 0; i < arrStudents.length; i++) {
+                if (arrStudents[i].name === name) {
+                    arrStudents.splice(i, 1);
+                }
+            }
+            return arrStudents;
+        }
+
+        this.add = function (student) {
+            arrStudents.push(student);
+            return arrStudents;
+        }
+        this.edit = function (name, birthday, score) {
+            for (let i = 0; i < arrStudents.length; i++) {
+                if (arrStudents[i].name === name) {
+                    arrStudents[i].birdthday = birthday;
+                    arrStudents[i].score = score;
+                }
+            }
+            return arrStudents;
+        }
+    }
+
+    let manager = new ManagerStudents();
+    manager.show();
+    let list = manager.delete("Nguyen Van A");
+    console.log(list);
+    manager.show();
+    let student4 = new Students("Nguyen Van D", "02/3/1956", 5);
+    manager.add(student4);
+    manager.show();
+    manager.edit('Nguyen Van C',"20/8/1986",10);
+    manager.show();
+</script>

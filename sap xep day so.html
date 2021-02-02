@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let number;
+    let arr = [];
+    do {
+        number = +prompt('Input amount element',);
+    } while (number <= 0);
+    for (let i = 0; i < number; i++) {
+        arr[i] = +prompt("input element " + i);
+    }
+    arr.sort(function (a, b) {
+        return a - b;
+    });
+    console.log(arr);
+
+</script>
